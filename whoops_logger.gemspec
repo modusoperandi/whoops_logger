@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.email = %q{daniel@flyingmachinestudios.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.rdoc"
+    "README.asciidoc"
   ]
   s.files = [
     ".document",
@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
-    "README.rdoc",
+    "README.asciidoc",
     "Rakefile",
     "VERSION",
     "lib/whoops_logger.rb",
