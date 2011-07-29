@@ -29,7 +29,7 @@ module WhoopsLogger
       # TODO: format
       # TODO: validation
       data = prepare_data(data)
-      logger.debug { "Sending request to #{url.to_s}:\n#{data}" } if logger
+      log :debug, "Sending request to #{url.to_s}:\n#{data}" if logger
 
       http =
         Net::HTTP::Proxy(proxy_host, proxy_port, proxy_user, proxy_pass).
@@ -72,7 +72,7 @@ module WhoopsLogger
       URI.parse("#{protocol}://#{host}:#{port}").merge(NOTICES_URI)
     end
 
-    def log(level, message, response = nil)
+    def log(level, message)
       logger.send level, message if logger
     end
 

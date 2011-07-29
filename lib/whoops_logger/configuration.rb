@@ -35,6 +35,10 @@ module WhoopsLogger
 
     # The password to use when logging into your proxy server (if using a proxy)
     attr_accessor :proxy_pass
+    
+    # Internal logger for debugging
+    # TODO: Is never initialized
+    attr_accessor :logger
 
     alias_method :secure?, :secure
 
