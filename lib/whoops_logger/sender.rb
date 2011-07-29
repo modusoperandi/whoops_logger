@@ -72,7 +72,8 @@ module WhoopsLogger
       URI.parse("#{protocol}://#{host}:#{port}").merge(NOTICES_URI)
     end
 
-    def log(level, message)
+    def log(level, message, response = nil)
+      # FIXME: Response is never used
       logger.send level, message if logger
     end
 
